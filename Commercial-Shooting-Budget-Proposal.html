@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Business Profile — Commercial Shooting Budget Proposal | Akarit Media Production</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#4AAFD5;
+    --blue-dark:#2C8DB5;
+    --blue-soft:#E6F5FB;
+    --green:#91B187;
+    --green-dark:#6E9663;
+    --green-soft:#EEF4EC;
+    --orange:#E7A339;
+    --orange-dark:#C9872A;
+    --orange-soft:#FDF3E3;
+    --ink:#0F172A;
+    --ink-2:#334155;
+    --ink-3:#64748B;
+    --line:#E2E8F0;
+    --bg:#F8FAFC;
+    --white:#FFFFFF;
+    --slide-w:1280px;
+    --slide-h:720px;
+    --scale:1;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  html,body{background:#DCE3EA;}
+
+  body{
+    font-family:'Inter','Noto Sans Myanmar','Padauk',sans-serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    padding:40px 20px 80px;
+  }
+
+  .my{font-family:'Noto Sans Myanmar','Padauk','Inter',sans-serif;}
+
+  /* ---------- deck / scaling ---------- */
+  .deck{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:34px;
+  }
+  .slide-wrap{
+    width:calc(var(--slide-w) * var(--scale));
+    height:calc(var(--slide-h) * var(--scale));
+    position:relative;
+  }
+  .slide{
+    position:absolute;
+    top:0;left:0;
+    width:var(--slide-w);
+    height:var(--slide-h);
+    transform:scale(var(--scale));
+    transform-origin:top left;
+    background:var(--white);
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 24px 60px rgba(15,23,42,.20), 0 3px 10px rgba(15,23,42,.10);
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* ---------- shared chrome ---------- */
+  .topbar{
+    height:7px;width:100%;
+    background:linear-gradient(90deg,var(--blue) 0%,var(--blue) 33%,var(--green) 33%,var(--green) 66%,var(--orange) 66%,var(--orange) 100%);
+    flex:none;
+  }
+  .slide-body{
+    flex:1;
+    padding:44px 60px 0;
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+  }
+  .foot{
+    flex:none;
+    height:52px;
+    padding:0 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-top:1px solid var(--line);
+    font-size:12.5px;
+    color:var(--ink-3);
+    letter-spacing:.04em;
+  }
+  .foot .brand{display:flex;align-items:center;gap:9px;font-weight:600;color:var(--ink-2);}
+  .dotmark{display:flex;gap:4px;}
+  .dotmark i{width:7px;height:7px;border-radius:50%;display:block;}
+  .dotmark i:nth-child(1){background:var(--blue);}
+  .dotmark i:nth-child(2){background:var(--green);}
+  .dotmark i:nth-child(3){background:var(--orange);}
+  .pgnum{
+    font-weight:800;color:var(--ink-2);
+    background:var(--bg);border:1px solid var(--line);
+    padding:3px 11px;border-radius:999px;font-size:12px;letter-spacing:.06em;
+  }
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--blue-dark);
+    margin-bottom:12px;
+  }
+  .eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--orange);}
+
+  h1.slide-title{
+    font-size:40px;line-height:1.12;font-weight:800;letter-spacing:-.02em;color:var(--ink);
+  }
+  h1.slide-title .sub{
+    display:block;font-size:16.5px;font-weight:500;color:var(--ink-3);
+    letter-spacing:.01em;margin-top:9px;
+  }
+  .title-rule{
+    width:74px;height:4px;border-radius:3px;
+    background:linear-gradient(90deg,var(--blue),var(--green));
+    margin:16px 0 24px;
+  }
+
+  /* =========================================================
+     SLIDE 1 — COVER
+     ========================================================= */
+  .cover{
+    background:
+      radial-gradient(900px 520px at 88% -12%, rgba(74,175,213,.20), transparent 60%),
+      radial-gradient(760px 480px at 4% 108%, rgba(145,177,135,.22), transparent 62%),
+      linear-gradient(160deg,#FFFFFF 0%,#F8FAFC 100%);
+    position:relative;
+  }
+  .cover .blob{
+    position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;
+  }
+  .cover .b1{width:280px;height:280px;right:-70px;top:-70px;background:radial-gradient(circle at 30% 30%,rgba(74,175,213,.55),rgba(74,175,213,0));}
+  .cover .b2{width:340px;height:340px;right:120px;bottom:-140px;background:radial-gradient(circle at 35% 35%,rgba(231,163,57,.45),rgba(231,163,57,0));}
+  .cover .b3{width:260px;height:260px;left:-90px;bottom:60px;background:radial-gradient(circle at 40% 40%,rgba(145,177,135,.45),rgba(145,177,135,0));}
+  .cover-grid{
+    position:absolute;inset:0;
+    background-image:linear-gradient(rgba(15,23,42,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(15,23,42,.045) 1px,transparent 1px);
+    background-size:56px 56px;
+    mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 72%);
+    -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 72%);
+  }
+  .cover .slide-body{padding:52px 64px 0;position:relative;z-index:2;}
+  .logo-row{display:flex;align-items:center;gap:14px;}
+  .logo-mark{
+    width:112px;height:112px;border-radius:20px;object-fit:contain;
+    background:#fff;padding:5px;
+    border:1px solid rgba(226,232,240,.95);
+    box-shadow:0 12px 26px rgba(15,23,42,.16);
+  }
+  .logo-txt strong{display:block;font-size:16.5px;font-weight:800;letter-spacing:.02em;color:var(--ink);}
+  .logo-txt span{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-top:3px;}
+
+  .cover h1{
+    font-size:70px;line-height:1.03;font-weight:900;letter-spacing:-.035em;
+    margin-top:44px;color:var(--ink);
+  }
+  .cover h1 em{
+    font-style:normal;
+    background:linear-gradient(92deg,var(--blue-dark) 0%,var(--blue) 42%,var(--green-dark) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .cover .kicker{
+    display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;
+  }
+  .chip{
+    font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    padding:8px 15px;border-radius:999px;border:1px solid var(--line);
+    background:rgba(255,255,255,.85);color:var(--ink-2);
+    backdrop-filter:blur(6px);
+  }
+  .chip.b{border-color:rgba(74,175,213,.5);color:var(--blue-dark);background:var(--blue-soft);}
+  .chip.g{border-color:rgba(145,177,135,.55);color:var(--green-dark);background:var(--green-soft);}
+  .chip.o{border-color:rgba(231,163,57,.55);color:var(--orange-dark);background:var(--orange-soft);}
+
+  .credits{
+    display:grid;grid-template-columns:1fr 1fr;gap:18px;
+    margin-top:auto;margin-bottom:34px;
+  }
+  .credit-card{
+    background:rgba(255,255,255,.9);
+    border:1px solid rgba(226,232,240,.9);
+    border-radius:16px;padding:20px 22px;
+    box-shadow:0 12px 30px rgba(15,23,42,.07);
+    backdrop-filter:blur(8px);
+    position:relative;overflow:hidden;
+  }
+  .credit-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--blue);}
+  .credit-card.for::before{background:var(--orange);}
+  .credit-card .lbl{
+    font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;
+    color:var(--ink-3);margin-bottom:11px;display:flex;align-items:center;gap:8px;
+  }
+  .credit-card.for .lbl{color:var(--orange-dark);}
+  .credit-card.by .lbl{color:var(--blue-dark);}
+  .credit-line{display:flex;gap:11px;align-items:flex-start;margin-bottom:9px;}
+  .credit-line:last-child{margin-bottom:0;}
+  .credit-line .bullet{width:7px;height:7px;border-radius:50%;background:var(--green);margin-top:8px;flex:none;}
+  .credit-line .who{font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.35;}
+  .credit-line .who span{display:block;font-size:12.5px;font-weight:500;color:var(--ink-3);margin-top:2px;}
+
+  /* =========================================================
+     Generic components
+     ========================================================= */
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+
+  .card{
+    background:var(--white);border:1px solid var(--line);border-radius:16px;
+    padding:22px 24px;box-shadow:0 6px 18px rgba(15,23,42,.05);
+  }
+  .card h3{
+    font-size:16px;font-weight:800;letter-spacing:-.01em;margin-bottom:12px;
+    display:flex;align-items:center;gap:10px;color:var(--ink);
+  }
+  .card h3 .ic{
+    width:30px;height:30px;border-radius:9px;flex:none;
+    display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;
+  }
+  .ic.b{background:linear-gradient(135deg,var(--blue),var(--blue-dark));}
+  .ic.g{background:linear-gradient(135deg,var(--green),var(--green-dark));}
+  .ic.o{background:linear-gradient(135deg,var(--orange),var(--orange-dark));}
+  .ic.n{background:linear-gradient(135deg,#94A3B8,#64748B);}
+
+  ul.ticks{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  ul.ticks li{
+    position:relative;padding-left:24px;font-size:14px;line-height:1.55;color:var(--ink-2);
+  }
+  ul.ticks li::before{
+    content:"";position:absolute;left:0;top:7px;width:13px;height:13px;border-radius:50%;
+    background:var(--green-soft);border:2px solid var(--green);
+  }
+  ul.ticks.blue li::before{background:var(--blue-soft);border-color:var(--blue);}
+  ul.ticks.orange li::before{background:var(--orange-soft);border-color:var(--orange);}
+  ul.ticks li b{color:var(--ink);font-weight:700;}
+
+  .stat{
+    background:linear-gradient(160deg,#FFFFFF,#F8FAFC);
+    border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+    position:relative;overflow:hidden;
+  }
+  .stat::after{content:"";position:absolute;right:-26px;top:-26px;width:84px;height:84px;border-radius:50%;background:var(--blue-soft);}
+  .stat.g::after{background:var(--green-soft);}
+  .stat.o::after{background:var(--orange-soft);}
+  .stat .num{font-size:34px;font-weight:900;letter-spacing:-.03em;color:var(--blue-dark);position:relative;z-index:1;}
+  .stat.g .num{color:var(--green-dark);}
+  .stat.o .num{color:var(--orange-dark);}
+  .stat .cap{font-size:12.5px;font-weight:600;color:var(--ink-3);margin-top:5px;letter-spacing:.05em;text-transform:uppercase;position:relative;z-index:1;}
+
+  /* package header block */
+  .pkg-head{
+    display:flex;align-items:stretch;gap:0;border-radius:16px;overflow:hidden;
+    border:1px solid var(--line);background:var(--white);
+    box-shadow:0 8px 22px rgba(15,23,42,.06);
+  }
+  .pkg-badge{
+    padding:20px 26px;color:#fff;display:flex;flex-direction:column;justify-content:center;min-width:250px;
+  }
+  .pkg-badge.b{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  .pkg-badge.g{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  .pkg-badge.o{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  .pkg-badge .n{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;opacity:.9;font-weight:700;}
+  .pkg-badge .t{font-size:27px;font-weight:900;letter-spacing:-.02em;margin-top:5px;}
+  .pkg-badge .m{font-size:13px;font-weight:500;opacity:.92;margin-top:4px;}
+  .pkg-price{
+    flex:1;display:flex;align-items:center;justify-content:space-between;padding:16px 28px;gap:20px;
+    background:linear-gradient(90deg,#FFFFFF,#F8FAFC);
+  }
+  .pkg-price .who{font-size:13.5px;color:var(--ink-3);font-weight:600;line-height:1.6;}
+  .pkg-price .who b{display:block;color:var(--ink);font-size:15.5px;font-weight:800;}
+  .pkg-price .amt{text-align:right;flex:none;}
+  .pkg-price .amt .cur{font-size:12.5px;font-weight:700;color:var(--ink-3);letter-spacing:.14em;}
+  .pkg-price .amt .val{font-size:38px;font-weight:900;letter-spacing:-.03em;color:var(--ink);line-height:1.1;}
+  .pkg-price .amt .per{font-size:12px;color:var(--ink-3);font-weight:600;}
+
+  .spec-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;}
+  .spec-row{display:grid;grid-template-columns:170px 1fr;border-bottom:1px solid var(--line);}
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row .k{
+    background:var(--bg);padding:13px 18px;font-size:12.5px;font-weight:800;
+    color:var(--ink-2);letter-spacing:.05em;text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  }
+  .spec-row .k i{width:6px;height:6px;border-radius:50%;background:var(--blue);display:block;flex:none;}
+  .spec-row.g .k i{background:var(--green);}
+  .spec-row.o .k i{background:var(--orange);}
+  .spec-row .v{padding:13px 20px;font-size:14px;color:var(--ink-2);line-height:1.6;}
+
+  .note{
+    display:flex;gap:12px;align-items:flex-start;
+    background:var(--orange-soft);border:1px solid rgba(231,163,57,.4);
+    border-radius:13px;padding:13px 17px;font-size:13px;line-height:1.6;color:#7A5312;
+  }
+  .note b{color:#5E3F0C;}
+  .note .ico{font-weight:900;color:var(--orange-dark);flex:none;font-size:15px;}
+
+  /* equipment unit cards (slide 2) */
+  .eq-card{
+    border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;
+    display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(15,23,42,.06);
+  }
+  .eq-hd{
+    display:flex;align-items:center;gap:11px;padding:8px 15px;color:#fff;
+  }
+  .eq-hd.b{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  .eq-hd.g{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  .eq-hd.o{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  .eq-n{
+    width:30px;height:30px;border-radius:9px;flex:none;
+    background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);
+    display:flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:900;
+  }
+  .eq-t{font-size:16px;font-weight:900;letter-spacing:-.01em;line-height:1.2;}
+  .eq-s{font-size:11.5px;font-weight:600;opacity:.9;margin-top:2px;letter-spacing:.04em;}
+  .eq-list{
+    list-style:none;padding:5px 14px;display:flex;flex-direction:column;gap:0;flex:1;
+  }
+  .eq-list li{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+    font-size:12.5px;color:var(--ink-2);padding:1px 4px;
+    border-bottom:1px dashed var(--line);line-height:1.35;
+  }
+  .eq-list li:last-child{border-bottom:none;}
+  .eq-list li b{
+    flex:none;min-width:26px;text-align:center;font-size:12px;font-weight:800;
+    background:var(--bg);border:1px solid var(--line);color:var(--ink-2);
+    padding:2px 7px;border-radius:7px;font-variant-numeric:tabular-nums;
+  }
+  .eq-total{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:8px 18px;font-size:13.5px;font-weight:800;color:#fff;letter-spacing:.03em;
+  }
+  .eq-total.b{background:linear-gradient(90deg,var(--blue-dark),var(--blue));}
+  .eq-total.g{background:linear-gradient(90deg,var(--green-dark),var(--green));}
+  .eq-total.o{background:linear-gradient(90deg,var(--orange-dark),var(--orange));}
+  .eq-total b{font-size:18px;font-weight:900;letter-spacing:-.02em;font-variant-numeric:tabular-nums;}
+
+  .grand-row{display:flex;gap:18px;align-items:stretch;margin-top:12px;}
+  .grand{
+    flex:1;display:flex;align-items:center;justify-content:space-between;gap:24px;
+    background:linear-gradient(120deg,var(--ink),#1E293B);color:#fff;
+    border-radius:16px;padding:12px 24px;
+    box-shadow:0 12px 30px rgba(15,23,42,.24);
+  }
+  .grand .gl{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--blue);}
+  .grand .gs{display:block;font-size:14.5px;font-weight:600;color:#CBD5E1;margin-top:5px;}
+  .grand-r{display:flex;align-items:baseline;gap:10px;flex:none;}
+  .grand-r .cur{font-size:13px;font-weight:800;letter-spacing:.16em;color:#94A3B8;}
+  .grand-r b{font-size:34px;font-weight:900;letter-spacing:-.03em;font-variant-numeric:tabular-nums;}
+
+  /* dense manifest lists (slide 4) */
+  .eq-list.plain{display:block;column-count:1;padding:6px 14px;}
+  .eq-list.two{display:block;column-count:2;column-gap:20px;padding:6px 14px;}
+  .eq-list.plain li, .eq-list.two li{
+    display:block;break-inside:avoid;-webkit-column-break-inside:avoid;
+    font-size:10.5px;line-height:1.45;padding:1.5px 3px;color:var(--ink-2);
+    border-bottom:1px dashed var(--line);
+  }
+  .eq-list.plain li:last-child, .eq-list.two li:last-child{border-bottom:none;}
+  .q{color:var(--ink-3);font-weight:800;font-size:10.5px;font-style:normal;margin-left:5px;white-space:nowrap;}
+  .eq-sub{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+    padding:6px 3px 2px;border-bottom:2px solid var(--line);margin-bottom:3px;}
+
+  /* grand total packages (slide 5) */
+  .gt-card{
+    background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    display:flex;flex-direction:column;box-shadow:0 10px 26px rgba(15,23,42,.07);
+  }
+  .gt-hd{padding:16px 22px;color:#fff;}
+  .gt-hd.b{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  .gt-hd.g{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  .gt-hd.o{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  .gt-hd .n{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;opacity:.9;}
+  .gt-hd .t{font-size:24px;font-weight:900;letter-spacing:-.02em;margin-top:4px;}
+  .gt-body{padding:22px 24px 20px;flex:1;display:flex;flex-direction:column;}
+  .gt-lbl{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--ink-3);}
+  .gt-amt{display:flex;align-items:baseline;gap:9px;margin-top:6px;}
+  .gt-amt .cur{font-size:14px;font-weight:800;letter-spacing:.14em;color:var(--ink-3);}
+  .gt-amt .val{font-size:44px;font-weight:900;letter-spacing:-.035em;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums;}
+  .gt-rows{margin-top:20px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line);}
+  .gt-rows .r{display:flex;justify-content:space-between;gap:12px;padding:9px 2px;border-bottom:1px dashed var(--line);font-size:13px;color:var(--ink-2);}
+  .gt-rows .r b{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums;}
+  .gt-track{margin-top:auto;padding-top:18px;}
+  .gt-track .bar{height:9px;border-radius:999px;background:var(--bg);border:1px solid var(--line);overflow:hidden;}
+  .gt-track .bar i{display:block;height:100%;border-radius:999px;}
+  .gt-track.b .bar i{background:linear-gradient(90deg,var(--blue),var(--blue-dark));}
+  .gt-track.g .bar i{background:linear-gradient(90deg,var(--green),var(--green-dark));}
+  .gt-track.o .bar i{background:linear-gradient(90deg,var(--orange),var(--orange-dark));}
+  .gt-track .cap{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-top:8px;}
+
+  /* comparison mini cards (slide 3) */
+  .cmp{
+    border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;
+    display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(15,23,42,.06);
+  }
+  .cmp .hd{padding:18px 22px 16px;color:#fff;}
+  .cmp.b .hd{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  .cmp.g .hd{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  .cmp.o .hd{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  .cmp .hd .lvl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.9;font-weight:700;}
+  .cmp .hd .nm{font-size:23px;font-weight:900;letter-spacing:-.02em;margin-top:4px;}
+  .cmp .hd .pr{font-size:15px;font-weight:700;margin-top:7px;opacity:.95;}
+  .cmp .bd{padding:18px 22px 20px;flex:1;display:flex;flex-direction:column;}
+  .cmp dl{display:flex;flex-direction:column;gap:11px;flex:1;}
+  .cmp dt{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:800;}
+  .cmp dd{font-size:14px;color:var(--ink-2);font-weight:600;margin-top:3px;line-height:1.5;}
+  .cmp .best{
+    margin-top:14px;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    padding:8px 12px;border-radius:9px;text-align:center;
+  }
+  .cmp.b .best{background:var(--blue-soft);color:var(--blue-dark);}
+  .cmp.g .best{background:var(--green-soft);color:var(--green-dark);}
+  .cmp.o .best{background:var(--orange-soft);color:var(--orange-dark);}
+
+  /* table (slide 7) */
+  table.budget{
+    width:100%;border-collapse:separate;border-spacing:0;
+    font-size:14px;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    background:#fff;box-shadow:0 8px 22px rgba(15,23,42,.06);
+  }
+  table.budget thead th{
+    background:var(--ink);color:#fff;padding:15px 18px;text-align:left;
+    font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;
+  }
+  table.budget thead th.c{text-align:center;}
+  table.budget thead th:last-child{text-align:right;}
+  table.budget thead th.pk-b{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  table.budget thead th.pk-g{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  table.budget thead th.pk-o{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  table.budget tbody td{
+    padding:13px 18px;border-bottom:1px solid var(--line);color:var(--ink-2);
+    background:#fff;
+  }
+  table.budget tbody tr:last-child td{border-bottom:none;}
+  table.budget tbody td.cat{font-weight:700;color:var(--ink);}
+  table.budget tbody td.cat small{display:block;font-weight:500;color:var(--ink-3);font-size:11.5px;margin-top:2px;letter-spacing:.02em;}
+  table.budget tbody td.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:600;}
+  table.budget tbody td.num.hi{background:var(--blue-soft);color:var(--blue-dark);font-weight:700;}
+  table.budget tbody td.num.hg{background:var(--green-soft);color:var(--green-dark);font-weight:700;}
+  table.budget tbody td.num.ho{background:var(--orange-soft);color:var(--orange-dark);font-weight:700;}
+  table.budget tbody tr:nth-child(even) td.cat,
+  table.budget tbody tr:nth-child(even) td.other{background:#FAFCFE;}
+  table.budget tbody tr.total td{
+    background:var(--ink);color:#fff;font-weight:900;font-size:16px;border-bottom:none;
+    padding:16px 18px;letter-spacing:.01em;
+  }
+  table.budget tbody tr.total td.num{text-align:center;font-size:17px;}
+  table.budget tbody tr.pct td{background:#F1F5F9;font-weight:700;color:var(--ink-2);font-size:13px;}
+  table.budget tbody tr.pct td.num{text-align:center;font-variant-numeric:tabular-nums;}
+
+  /* professional fees (slide 4) */
+  .fee-list{
+    flex:1;display:flex;flex-direction:column;justify-content:center;
+    border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;
+    box-shadow:0 8px 22px rgba(15,23,42,.06);
+  }
+  .fee-row{
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    padding:16px 28px;border-bottom:1px dashed var(--line);
+    font-size:15.5px;color:var(--ink-2);
+  }
+  .fee-row:nth-child(even){background:#FAFCFE;}
+  .fee-row:last-child{border-bottom:none;}
+  .fee-row .nm{font-weight:600;display:flex;align-items:center;gap:12px;}
+  .fee-row .nm i{width:8px;height:8px;border-radius:50%;background:var(--blue);display:block;flex:none;}
+  .fee-row:nth-child(3n+2) .nm i{background:var(--green);}
+  .fee-row:nth-child(3n+3) .nm i{background:var(--orange);}
+  .fee-row .tag{
+    font-size:11px;font-weight:700;letter-spacing:.06em;padding:4px 9px;border-radius:6px;
+    background:var(--orange-soft);color:var(--orange-dark);margin-left:4px;
+  }
+  .fee-row .amt{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;flex:none;}
+
+  /* timeline (slide 8) */
+  .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:6px;}
+  .timeline::before{
+    content:"";position:absolute;left:6%;right:6%;top:26px;height:3px;
+    background:linear-gradient(90deg,var(--blue),var(--green),var(--orange));border-radius:2px;
+  }
+  .tl{position:relative;padding:0 12px;text-align:center;}
+  .tl .node{
+    width:54px;height:54px;border-radius:50%;margin:0 auto 14px;position:relative;z-index:2;
+    display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:16px;
+    border:5px solid #fff;box-shadow:0 8px 18px rgba(15,23,42,.16);
+  }
+  .tl:nth-child(1) .node{background:linear-gradient(140deg,var(--blue),var(--blue-dark));}
+  .tl:nth-child(2) .node{background:linear-gradient(140deg,#5FBF9B,var(--green-dark));}
+  .tl:nth-child(3) .node{background:linear-gradient(140deg,var(--green),var(--green-dark));}
+  .tl:nth-child(4) .node{background:linear-gradient(140deg,var(--orange),var(--orange-dark));}
+  .tl .ph{font-size:15.5px;font-weight:800;color:var(--ink);letter-spacing:-.01em;}
+  .tl .days{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-dark);margin-top:5px;}
+  .tl:nth-child(2) .days{color:#4FA98A;}
+  .tl:nth-child(3) .days{color:var(--green-dark);}
+  .tl:nth-child(4) .days{color:var(--orange-dark);}
+  .tl ul{list-style:none;margin-top:11px;display:flex;flex-direction:column;gap:7px;}
+  .tl ul li{font-size:12.5px;color:var(--ink-2);line-height:1.5;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 9px;}
+
+  .deliver{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .dl{
+    border:1px solid var(--line);border-radius:13px;background:#fff;padding:14px 16px;
+    display:flex;gap:12px;align-items:flex-start;
+  }
+  .dl .tag{
+    font-size:10.5px;font-weight:900;letter-spacing:.06em;padding:5px 8px;border-radius:6px;flex:none;
+    background:var(--blue-soft);color:var(--blue-dark);
+  }
+  .dl:nth-child(3n+2) .tag{background:var(--green-soft);color:var(--green-dark);}
+  .dl:nth-child(3n+3) .tag{background:var(--orange-soft);color:var(--orange-dark);}
+  .dl .tx{font-size:13px;color:var(--ink-2);line-height:1.5;}
+  .dl .tx b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px;}
+
+  /* slide 9 closing */
+  .closing{
+    background:
+      radial-gradient(760px 460px at 92% -10%, rgba(74,175,213,.22), transparent 60%),
+      radial-gradient(700px 460px at 0% 110%, rgba(231,163,57,.20), transparent 62%),
+      linear-gradient(160deg,#FFFFFF,#F8FAFC);
+    position:relative;
+  }
+  .thanks{
+    font-size:66px;font-weight:900;letter-spacing:-.035em;line-height:1.05;color:var(--ink);
+  }
+  .thanks span{
+    background:linear-gradient(92deg,var(--orange-dark),var(--orange));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .qa-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;margin-top:26px;}
+  .contact{
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;
+    box-shadow:0 10px 26px rgba(15,23,42,.07);
+  }
+  .contact .h{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--blue-dark);margin-bottom:14px;}
+  .contact .row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px;}
+  .contact .row:last-child{border-bottom:none;}
+  .contact .row .l{color:var(--ink-3);font-weight:600;}
+  .contact .row .r{color:var(--ink);font-weight:700;text-align:right;}
+  .next{
+    background:linear-gradient(140deg,var(--ink),#1E293B);color:#fff;border-radius:16px;padding:22px 24px;
+    box-shadow:0 12px 30px rgba(15,23,42,.25);
+  }
+  .next .h{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--orange);margin-bottom:14px;}
+  .next ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
+  .next ul li{font-size:13.5px;line-height:1.55;padding-left:22px;position:relative;color:#E2E8F0;}
+  .next ul li::before{content:"→";position:absolute;left:0;color:var(--blue);font-weight:800;}
+
+  .legend{display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--ink-3);font-weight:600;}
+  .legend span{display:flex;align-items:center;gap:7px;}
+  .legend i{width:11px;height:11px;border-radius:3px;display:block;}
+
+  /* ---------- controls ---------- */
+  .toolbar{
+    position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:60;
+    background:rgba(15,23,42,.92);backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:999px;padding:8px 10px;display:flex;gap:6px;align-items:center;
+    box-shadow:0 14px 34px rgba(15,23,42,.35);
+  }
+  .toolbar button{
+    font-family:inherit;font-size:12.5px;font-weight:700;letter-spacing:.05em;
+    color:#E2E8F0;background:transparent;border:none;cursor:pointer;
+    padding:7px 15px;border-radius:999px;transition:.18s;
+  }
+  .toolbar button:hover{background:rgba(255,255,255,.14);color:#fff;}
+  .toolbar .sep{width:1px;height:20px;background:rgba(255,255,255,.18);}
+  .toolbar .lbl{font-size:12px;color:#94A3B8;padding:0 8px;font-variant-numeric:tabular-nums;}
+
+  @media print{
+    html,body{background:#fff;padding:0;}
+    .toolbar{display:none;}
+    .deck{gap:0;}
+    .slide-wrap{width:1280px;height:720px;page-break-after:always;break-after:page;}
+    .slide{transform:none;box-shadow:none;border-radius:0;}
+    @page{size:1280px 720px;margin:0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- ============ SLIDE 1 : TITLE / CREDITS ============ -->
+  <div class="slide-wrap">
+    <section class="slide cover">
+      <div class="topbar"></div>
+      <div class="cover-grid"></div>
+      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+      <div class="slide-body">
+        <div class="logo-row">
+          <img class="logo-mark" src="Logo.png" alt="Akarit Media Production logo" onerror="this.style.display='none';">
+          <div class="logo-txt">
+            <strong>Akarit Media Production</strong>
+            <span>Commercial · Film · Post</span>
+          </div>
+        </div>
+
+        <div class="kicker" style="margin-top:38px;">
+          <span class="chip b">Budget Proposal</span>
+          <span class="chip g">2 Packages</span>
+          <span class="chip o">2026 Production Year</span>
+        </div>
+
+        <h1>Business Profile<br><em>Commercial Shooting<br>Budget Proposal</em></h1>
+
+        <div class="credits" style="grid-template-columns:1fr;">
+          <div class="credit-card by">
+            <div class="lbl">◆ Presented by</div>
+            <div style="display:flex;gap:30px;flex-wrap:wrap;align-items:flex-start;">
+              <div class="credit-line" style="margin-bottom:0;">
+                <span class="bullet" style="background:var(--blue);"></span>
+                <div class="who">Akarit Production</div>
+              </div>
+              <div class="credit-line" style="margin-bottom:0;">
+                <span class="bullet"></span>
+                <div class="who">Ye Htut Aung<span>Production Director</span></div>
+              </div>
+              <div class="credit-line" style="margin-bottom:0;">
+                <span class="bullet" style="background:var(--blue);"></span>
+                <div class="who">Hein Htet<span>DoP (I wanna be your Lobster)</span></div>
+              </div>
+              <div class="credit-line" style="margin-bottom:0;">
+                <span class="bullet"></span>
+                <div class="who">Chan Myae Kyaw Zin<span>Producer</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Clear Summer Day Theme</div>
+        <div class="pgnum">01 / 06</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ SLIDE 2 : PACKAGE 1 (INTERMEDIATE PACKAGE) ============ -->
+  <div class="slide-wrap">
+    <section class="slide">
+      <div class="topbar"></div>
+      <div class="slide-body" style="padding-top:26px;">
+        <div class="eyebrow" style="color:var(--blue-dark);margin-bottom:6px;">Slide 02 · Package 1</div>
+        <h1 class="slide-title" style="font-size:30px;">
+          Package 1 <span style="color:var(--green-dark);">(Intermediate Package)</span>
+          <span class="sub" style="font-size:14.5px;margin-top:7px;">Camera Unit · Lighting Unit · Crew Unit — Equipment &amp; Crew Listing</span>
+        </h1>
+        <div class="title-rule" style="background:linear-gradient(90deg,var(--green),var(--green-dark));margin:12px 0 16px;"></div>
+
+        <div class="grid-3" style="flex:1;min-height:0;align-content:stretch;">
+
+          <!-- Camera Unit -->
+          <div class="eq-card">
+            <div class="eq-hd b">
+              <span class="eq-n">01</span>
+              <div>
+                <div class="eq-t">Camera Unit</div>
+                <div class="eq-s">4K Cinema Camera Package</div>
+              </div>
+            </div>
+            <ul class="eq-list">
+              <li><span>Sony FX3</span></li>
+              <li><span>Xeen Cinema Lens Set</span></li>
+              <li><span>Director Monitor</span></li>
+              <li><span>Hotshoe Monitor</span></li>
+              <li><span>Video Wireless</span></li>
+              <li><span>Video Tripod</span></li>
+            </ul>
+            <div class="eq-total b"><span>Total -</span><b>2,000,000</b></div>
+          </div>
+
+          <!-- Lighting Unit -->
+          <div class="eq-card">
+            <div class="eq-hd g">
+              <span class="eq-n">02</span>
+              <div>
+                <div class="eq-t">Lighting Unit</div>
+                <div class="eq-s">Light, Grip, Power &amp; Atmosphere</div>
+              </div>
+            </div>
+            <ul class="eq-list">
+              <li><span>Apature 1200D</span></li>
+              <li><span>Apature 600D</span></li>
+              <li><span>Apature 300D</span></li>
+              <li><span>Amaran F22c</span></li>
+              <li><span>Amaran F22x</span></li>
+              <li><span>Nanlite Mixpanel</span></li>
+              <li><span>RGB 4ft</span></li>
+              <li><span>China Ball</span></li>
+              <li><span>Diffuser Frame</span></li>
+              <li><span>Gobo Frame</span></li>
+              <li><span>Smoke Machine</span></li>
+              <li><span>7kv Generator</span></li>
+              <li><span>Cinema Slider</span></li>
+            </ul>
+            <div class="eq-total g"><span>Total -</span><b>2,500,000</b></div>
+          </div>
+
+          <!-- Crew Unit -->
+          <div class="eq-card">
+            <div class="eq-hd o">
+              <span class="eq-n">03</span>
+              <div>
+                <div class="eq-t">Crew Unit</div>
+                <div class="eq-s">On-Set Team · 8 Persons</div>
+              </div>
+            </div>
+            <ul class="eq-list">
+              <li><span>Gaffer</span></li>
+              <li><span>AC</span></li>
+              <li><span>Lighting Crew</span></li>
+              <li><span>Setting Crew</span></li>
+              <li><span>Manager</span></li>
+            </ul>
+            <div class="eq-total o"><span>Total -</span><b>2,000,000</b></div>
+          </div>
+        </div>
+
+        <div class="grand-row">
+          <div class="grand">
+            <div class="grand-l">
+              <span class="gl">Grand Total</span>
+              <span class="gs">Package 1 · Intermediate Package · 2 Duty (7 AM – 6 PM)</span>
+            </div>
+            <div class="grand-r">
+              <span class="cur">MMK</span>
+              <b>6,500,000</b>
+            </div>
+          </div>
+          <div class="note" style="margin:0;flex:none;width:340px;align-items:center;">
+            <span class="ico">◆</span>
+            <div><b>Note:</b> 2 Duty (7 AM – 6 PM). Overtime beyond the duty hours is billed separately.</div>
+          </div>
+        </div>
+
+        <div style="height:4px;"></div>
+      </div>
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Package 1 · Intermediate Package</div>
+        <div class="pgnum">02 / 06</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ SLIDE 3 : PACKAGE 2 (HIGH END PACKAGE) ============ -->
+  <div class="slide-wrap">
+    <section class="slide">
+      <div class="topbar"></div>
+      <div class="slide-body" style="padding-top:26px;">
+        <div class="eyebrow" style="color:var(--orange-dark);margin-bottom:6px;">Slide 03 · Package 2</div>
+        <h1 class="slide-title" style="font-size:30px;">
+          Package 2 <span style="color:var(--orange-dark);">(High End Package)</span>
+          <span class="sub" style="font-size:14.5px;margin-top:7px;">Camera Unit · Lighting Unit · Crew Unit — Full Equipment &amp; Crew Manifest</span>
+        </h1>
+        <div class="title-rule" style="background:linear-gradient(90deg,var(--orange),var(--orange-dark));margin:10px 0 13px;"></div>
+
+        <div class="grid-3" style="flex:1;min-height:0;align-content:stretch;grid-template-columns:0.92fr 1.62fr 0.74fr;gap:16px;">
+
+          <!-- Camera Unit -->
+          <div class="eq-card">
+            <div class="eq-hd b">
+              <span class="eq-n">01</span>
+              <div>
+                <div class="eq-t">Camera Unit</div>
+                <div class="eq-s">ARRI Alexa Mini Package</div>
+              </div>
+            </div>
+            <ul class="eq-list plain">
+              <li>ARRI Alexa Mini — High Speed · Anamorphic <i class="q">×1</i></li>
+              <li>RAW License · Internal NDs .6 / 1.2 / 2.1 <i class="q">×1</i></li>
+              <li>Alexa Mini View Finder <i class="q">×1</i></li>
+              <li>2×256GB &amp; 2×128GB Cfast Cards <i class="q">×1</i></li>
+              <li>Thunderbolt / USB3 Card Reader <i class="q">×1</i></li>
+              <li>Movcam Base Kit — Camera Cage &amp; Bridge Plate <i class="q">×1</i></li>
+              <li>Tilta 3-Stage 4x5" Mattebox <i class="q">×1</i></li>
+              <li>Tripod / Highhat <i class="q">×1</i></li>
+              <li>V-Mount 155Wh Batteries <i class="q">×8</i></li>
+              <li>Dual Chargers &amp; Accessories <i class="q">×2</i></li>
+              <li>Teradek 1:2 Wireless <i class="q">×1</i></li>
+              <li>FSI 21" Monitor <i class="q">×1</i></li>
+              <li>SmallHD 7.7" Monitor <i class="q">×1</i></li>
+              <li>Lens Cookie Mini S4 <i class="q">×1</i></li>
+              <li>Ronin R2 <i class="q">×1</i></li>
+            </ul>
+            <div class="eq-total b"><span>Total -</span><b>3,000,000</b></div>
+          </div>
+
+          <!-- Lighting Unit -->
+          <div class="eq-card">
+            <div class="eq-hd g">
+              <span class="eq-n">02</span>
+              <div>
+                <div class="eq-t">Lighting Unit</div>
+                <div class="eq-s">HMI · LED · Grip · Power &amp; Transport</div>
+              </div>
+            </div>
+            <ul class="eq-list two">
+              <li>9K Maxi Brute 9 Lights <i class="q">×1</i></li>
+              <li>Maxi Brute 6 Lights — LED / Bi-Color (w/ effect) <i class="q">×2</i></li>
+              <li>6K PAR HMI ARRI <i class="q">×2</i></li>
+              <li>4K PAR HMI ARRI <i class="q">×2</i> <span style="color:var(--ink-3);">(or)</span> 2.5K PAR HMI ARRI <i class="q">×2</i></li>
+              <li>1.2K PAR HMI SUNRAY <i class="q">×1</i></li>
+              <li>Joker 800 HMI <i class="q">×1</i></li>
+              <li>1K Tungsten Redhead Openface <i class="q">×1</i></li>
+              <li>Arri Tungsten Fresnel 650W <i class="q">×2</i></li>
+              <li>300D2 Aputure w/ compact Len <i class="q">×1</i></li>
+              <li>300D Aputure w/ compact Len <i class="q">×1</i></li>
+              <li>600D Pro Aputure w/ compact Len &amp; umbrella <i class="q">×1</i></li>
+              <li>Skypanel S60C (w/ remote control) <i class="q">×2</i></li>
+              <li>Amaran F22C (w/ colour effects) <i class="q">×2</i></li>
+              <li>Phosphor LED Panel CineoHS <i class="q">×1</i></li>
+              <li>Phosphor LED Panel Area 48 <i class="q">×2</i></li>
+              <li>Grip / Accessory Gears <i class="q">×2</i></li>
+              <li>Smoke Machine w/ Juice Box <i class="q">×1</i></li>
+              <li>20x20 Butterfly (w/ Silk) <i class="q">×1</i></li>
+              <li>12x12 Butterfly (w/ Silk) <i class="q">×2</i></li>
+              <li>Solid 20x20 (Black Clothes) <i class="q">×1</i></li>
+              <li>Solid 12x12 (Black Clothes) <i class="q">×5</i></li>
+              <li>4x4 Frame <i class="q">×20</i> — Floppy (Gobo) / Diffusions / CTO / CTB</li>
+              <li>C-Stands (w/ Cart) <i class="q">×15</i></li>
+              <li>Bounce Board (White / Black) <i class="q">×5</i></li>
+              <li>Power Fan <i class="q">×1</i></li>
+              <li>Dana Dolly (6/10) <i class="q">×1</i></li>
+              <li>Boom Arm / Wall Spreader <i class="q">×2</i></li>
+              <li>Clamps <i class="q">×15</i> — Cardellini, Pipe, B-Board, Mafa</li>
+              <li>Apple Box (One Family) <i class="q">×3</i></li>
+              <li>Sandbag <i class="q">×15</i></li>
+              <li>Utilities Carts <i class="q">×3</i></li>
+              <li>45KV Super Silent Generator + Truck <i class="q">×1</i></li>
+              <li>Hydraulic Box Truck — 4 Tons <i class="q">×1</i></li>
+            </ul>
+            <div class="eq-total g"><span>Total -</span><b>5,000,000</b></div>
+          </div>
+
+          <!-- Crew Unit -->
+          <div class="eq-card">
+            <div class="eq-hd o">
+              <span class="eq-n">03</span>
+              <div>
+                <div class="eq-t">Crew Unit</div>
+                <div class="eq-s">On-Set Team · 18 Persons</div>
+              </div>
+            </div>
+            <ul class="eq-list plain">
+              <li>Gaffer <i class="q">×1</i></li>
+              <li>AC <i class="q">×1</i></li>
+              <li>2nd AC <i class="q">×1</i></li>
+              <li>Lighting Crew <i class="q">×10</i></li>
+              <li>Camera Crew <i class="q">×2</i></li>
+              <li>Setting Crew <i class="q">×2</i></li>
+              <li>Manager <i class="q">×1</i></li>
+            </ul>
+            <div class="eq-total o"><span>Total -</span><b>3,500,000</b></div>
+          </div>
+        </div>
+
+        <div class="grand-row">
+          <div class="grand">
+            <div class="grand-l">
+              <span class="gl">Grand Total</span>
+              <span class="gs">Package 2 · High End Package · 2 Duty (7 AM – 6 PM)</span>
+            </div>
+            <div class="grand-r">
+              <span class="cur">MMK</span>
+              <b>11,500,000</b>
+            </div>
+          </div>
+          <div class="note" style="margin:0;flex:none;width:340px;align-items:center;">
+            <span class="ico">◆</span>
+            <div><b>Note:</b> 2 Duty (7 AM – 6 PM). Overtime beyond the duty hours is billed separately.</div>
+          </div>
+        </div>
+
+        <div style="height:0;"></div>
+      </div>
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Package 2 · High End Package</div>
+        <div class="pgnum">03 / 06</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ SLIDE 4 : PROFESSIONAL FEES ============ -->
+  <div class="slide-wrap">
+    <section class="slide">
+      <div class="topbar"></div>
+      <div class="slide-body" style="padding-top:26px;">
+        <div class="eyebrow" style="color:var(--blue-dark);margin-bottom:6px;">Slide 04 · Professional Fees</div>
+        <h1 class="slide-title" style="font-size:30px;">
+          Professional Fees
+          <span class="sub" style="font-size:14.5px;margin-top:7px;">Creative · Direction · Post-Production · Logistics</span>
+        </h1>
+        <div class="title-rule" style="margin:12px 0 16px;"></div>
+
+        <div class="fee-list">
+          <div class="fee-row">
+            <span class="nm"><i></i>Idea Developing &amp; Concept</span>
+            <span class="amt">1,000,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>Script &amp; Storyboard</span>
+            <span class="amt">1,000,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>Director</span>
+            <span class="amt">2,000,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>AD</span>
+            <span class="amt">500,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>DoP</span>
+            <span class="amt">1,000,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>Editing &amp; Coloring <span class="tag">No CGI / VFX</span></span>
+            <span class="amt">1,800,000</span>
+          </div>
+          <div class="fee-row">
+            <span class="nm"><i></i>Transportation</span>
+            <span class="amt">1,000,000</span>
+          </div>
+        </div>
+
+        <div class="grand-row">
+          <div class="grand">
+            <div class="grand-l">
+              <span class="gl">Total</span>
+              <span class="gs">Professional Fees · All items — estimated cost in MMK</span>
+            </div>
+            <div class="grand-r">
+              <span class="cur">MMK</span>
+              <b>8,300,000</b>
+            </div>
+          </div>
+          <div class="note" style="margin:0;flex:none;width:340px;align-items:center;">
+            <span class="ico">◆</span>
+            <div><b>Note:</b> Figures in MMK, exclusive of commercial tax.</div>
+          </div>
+        </div>
+
+        <div style="height:4px;"></div>
+      </div>
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Professional Fees</div>
+        <div class="pgnum">04 / 06</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ SLIDE 5 : GRAND TOTAL PACKAGES ============ -->
+  <div class="slide-wrap">
+    <section class="slide">
+      <div class="topbar"></div>
+      <div class="slide-body" style="padding-top:34px;">
+        <div class="eyebrow">Slide 05 · Summary</div>
+        <h1 class="slide-title">
+          Grand Total Packages
+          <span class="sub">Comparison of the two shooting packages — estimated cost in MMK</span>
+        </h1>
+        <div class="title-rule"></div>
+
+        <div class="grid-2" style="flex:1;min-height:0;align-content:stretch;gap:24px;">
+
+          <div class="gt-card">
+            <div class="gt-hd g">
+              <div class="n">Package 01</div>
+              <div class="t">Intermediate Package</div>
+            </div>
+            <div class="gt-body">
+              <div class="gt-lbl">All Inclusive Grand Total</div>
+              <div class="gt-amt"><span class="cur">MMK</span><span class="val">14,800,000</span></div>
+              <div class="gt-rows">
+                <div class="r"><span>Camera Unit</span><b>2,000,000</b></div>
+                <div class="r"><span>Lighting Unit</span><b>2,500,000</b></div>
+                <div class="r"><span>Crew Unit</span><b>2,000,000</b></div>
+                <div class="r"><span>Professional Fees</span><b>8,300,000</b></div>
+              </div>
+              <div class="gt-track g">
+                <div class="bar"><i style="width:75%;"></i></div>
+                <div class="cap">75% of highest package</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gt-card">
+            <div class="gt-hd o">
+              <div class="n">Package 02</div>
+              <div class="t">High End Package</div>
+            </div>
+            <div class="gt-body">
+              <div class="gt-lbl">All Inclusive Grand Total</div>
+              <div class="gt-amt"><span class="cur">MMK</span><span class="val">19,800,000</span></div>
+              <div class="gt-rows">
+                <div class="r"><span>Camera Unit</span><b>3,000,000</b></div>
+                <div class="r"><span>Lighting Unit</span><b>5,000,000</b></div>
+                <div class="r"><span>Crew Unit</span><b>3,500,000</b></div>
+                <div class="r"><span>Professional Fees</span><b>8,300,000</b></div>
+              </div>
+              <div class="gt-track o">
+                <div class="bar"><i style="width:100%;"></i></div>
+                <div class="cap">100% · Highest package</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grand-row">
+          <div class="grand">
+            <div class="grand-l">
+              <span class="gl">All Packages · Grand Total</span>
+              <span class="gs">Intermediate · High End — select the package that fits your production</span>
+            </div>
+            <div class="grand-r">
+              <span class="cur">MMK</span>
+              <b>14,800,000 – 19,800,000</b>
+            </div>
+          </div>
+          <div class="note" style="margin:0;flex:none;width:340px;align-items:center;">
+            <span class="ico">◆</span>
+            <div><b>Note:</b> 2 Duty (7 AM – 6 PM). Figures in MMK, exclusive of commercial tax.</div>
+          </div>
+        </div>
+
+        <div style="height:4px;"></div>
+      </div>
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Grand Total Packages</div>
+        <div class="pgnum">05 / 06</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ SLIDE 6 : TERMS & CONDITIONS ============ -->
+  <div class="slide-wrap">
+    <section class="slide">
+      <div class="topbar"></div>
+      <div class="slide-body" style="padding-top:26px;">
+        <div class="eyebrow" style="color:var(--blue-dark);margin-bottom:6px;">Slide 06 · Terms &amp; Conditions</div>
+        <h1 class="slide-title" style="font-size:30px;">
+          Terms &amp; Conditions
+          <span class="sub" style="font-size:14.5px;margin-top:7px;">Payment Methods · Revision · Region</span>
+        </h1>
+        <div class="title-rule" style="margin:12px 0 16px;"></div>
+
+        <div style="font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:12px;">Payment Methods</div>
+
+        <div class="grid-3" style="gap:20px;flex:none;">
+          <div class="card">
+            <h3><span class="ic b">1</span> 1st Payment</h3>
+            <div style="font-size:42px;font-weight:900;letter-spacing:-.03em;color:var(--blue-dark);line-height:1;">60%</div>
+            <div style="font-size:14px;color:var(--ink-2);margin-top:10px;line-height:1.55;font-weight:600;">Confirm the project — Down payment</div>
+          </div>
+          <div class="card">
+            <h3><span class="ic g">2</span> 2nd Payment</h3>
+            <div style="font-size:42px;font-weight:900;letter-spacing:-.03em;color:var(--green-dark);line-height:1;">20%</div>
+            <div style="font-size:14px;color:var(--ink-2);margin-top:10px;line-height:1.55;font-weight:600;">First day of shooting finish</div>
+          </div>
+          <div class="card">
+            <h3><span class="ic o">3</span> 3rd Payment</h3>
+            <div style="font-size:42px;font-weight:900;letter-spacing:-.03em;color:var(--orange-dark);line-height:1;">20%</div>
+            <div style="font-size:14px;color:var(--ink-2);margin-top:10px;line-height:1.55;font-weight:600;">Project Deliver</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px;flex:1;">
+          <h3><span class="ic n">i</span> General Terms</h3>
+          <ul class="ticks">
+            <li><b>Revision:</b> Available 3 times revive</li>
+            <li><b>Region:</b> This package is prefer for only Yangon Region</li>
+            <li><b>Other Region:</b> If other region, add on one duty fees in package</li>
+          </ul>
+        </div>
+
+        <div style="height:4px;"></div>
+      </div>
+      <div class="foot">
+        <div class="brand"><span class="dotmark"><i></i><i></i><i></i></span> Terms &amp; Conditions</div>
+        <div class="pgnum">06 / 06</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<div class="toolbar">
+  <button id="prevBtn">‹ Prev</button>
+  <span class="lbl" id="slideInd">1 / 6</span>
+  <button id="nextBtn">Next ›</button>
+  <span class="sep"></span>
+  <button id="fitBtn">Fit width</button>
+  <button id="printBtn">Print / PDF</button>
+</div>
+
+<script>
+  (function(){
+    var SLIDE_W = 1280, SLIDE_H = 720;
+    var wraps = Array.prototype.slice.call(document.querySelectorAll('.slide-wrap'));
+    var current = 0;
+
+    function fit(){
+      var pad = 40;
+      var avail = Math.min(document.documentElement.clientWidth - pad, 1440);
+      var s = Math.min(1, avail / SLIDE_W);
+      if (s < 0.32) s = 0.32;
+      document.documentElement.style.setProperty('--scale', s);
+      return s;
+    }
+
+    function updateInd(){
+      document.getElementById('slideInd').textContent = (current+1) + ' / ' + wraps.length;
+    }
+
+    function goTo(i){
+      if (i < 0) i = 0;
+      if (i > wraps.length - 1) i = wraps.length - 1;
+      current = i;
+      var s = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--scale')) || 1;
+      var top = wraps[i].offsetTop - 30;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+      updateInd();
+    }
+
+    function currentIndexFromScroll(){
+      var y = window.scrollY + 120, idx = 0;
+      for (var i=0;i<wraps.length;i++){
+        if (wraps[i].offsetTop <= y) idx = i;
+      }
+      return idx;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', function(){ goTo(current-1); });
+    document.getElementById('nextBtn').addEventListener('click', function(){ goTo(current+1); });
+    document.getElementById('fitBtn').addEventListener('click', fit);
+    document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); goTo(current+1); }
+      if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(current-1); }
+      if (e.key === 'Home') { e.preventDefault(); goTo(0); }
+      if (e.key === 'End') { e.preventDefault(); goTo(wraps.length-1); }
+    });
+
+    window.addEventListener('scroll', function(){
+      current = currentIndexFromScroll();
+      updateInd();
+    }, { passive:true });
+
+    window.addEventListener('resize', fit);
+    window.addEventListener('load', fit);
+    fit();
+    updateInd();
+  })();
+</script>
+</body>
+</html>
